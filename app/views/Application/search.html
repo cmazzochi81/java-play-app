@@ -1,0 +1,45 @@
+#{extends 'header.html' /}
+#{set title:'Search Results' /}
+
+<div id="mainContent" class="clearfix">
+    
+        <div id="search-results">
+        #{ifErrors}
+                <h1>Errors Encountered</h1>
+                <ul>
+                    #{errors}
+                    <li>${error}</li>
+                    #{/errors}
+                </ul>
+            #{/ifErrors}
+        #{else}
+           
+             <h1>Search Results</h1>
+            #{if results}
+                
+            Found ${results.count} item${results.count.pluralize()} matching '${search}'.
+                Showing items ${((page-1)*20)+1} to ${((page-1)*20) + results.items.size()}.
+                
+                #{if results.count > 20}
+                    <p>
+                    #{if page > 1}
+                        <a href="@{Application.search(search, page-1)}"> <<< Previous </a> ||
+                    #{/if}
+                    
+                    #{if page*20 <= results.count}
+                     <a href="@{Application.search(search, page+1)}"> Next  </a> ||
+                     #{/if}
+                      </p>
+                #{/if}<!--End if results.count > 20-->
+                 #{itemSummaryList items:results.items, type:'full' /}
+            #{/if}
+            #{else}
+                Sorry! We did not find any results matching '${search}'
+            #{/else}
+        #{/else}
+        </div><!--End search-results div-->
+   </div><!--End Main Content div-->
+
+
+
+   

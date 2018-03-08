@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/bootstrap.css'}"/>
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/jquery-ui-1.10.3.custom.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    </head>
+    <body>
+        #{doLayout /}
+        
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        #{get 'moreScripts' /}
+    </body>
+    <footer id ="site_footer">
+            <p style="color:#000;"><small>© All Right Reserved.| Mazzo Art House | www.mazzoart.com | sales@mazzoart.com </small></p>
+        </footer><!--End footer div-->
+
+        <script type="text/javascript">
+$(document).ready(function () {
+    $('.slideout-menu-toggle').on('click', function (event) {
+        event.preventDefault();
+        // create menu variables
+        var slideoutMenu = $('.slideout-menu');
+        var slideoutMenuWidth = $('.slideout-menu').width();
+
+        // toggle open class
+        slideoutMenu.toggleClass("open");
+
+        // slide menu
+        if (slideoutMenu.hasClass("open")) {
+            slideoutMenu.animate({
+                left: "0px"
+            });
+        } else {
+            slideoutMenu.animate({
+                left: -slideoutMenuWidth
+            }, 250);
+        }
+    });
+
+
+    $('.slideout-menu-close').on('click', function (event) {
+        event.preventDefault();
+        // create menu variables
+        var slideoutMenu = $('.slideout-menu');
+        var slideoutMenuWidth = $('.slideout-menu').width();
+
+        // toggle open class
+        if (slideoutMenu.hasClass("open")) {
+
+            slideoutMenu.animate({
+                left: -slideoutMenuWidth
+            }, 250);
+
+        } else {
+            slideoutMenu.animate({
+                left: "0px"
+            });
+        }
+        // toogle class after condition check
+        slideoutMenu.toggleClass("open");
+    });
+
+});
+</script>
+</html>

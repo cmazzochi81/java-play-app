@@ -1,0 +1,27 @@
+#{extends 'header.html' /}
+#{set title: 'Chris Mazzochi Web Designs Login.' /}
+
+<div id="loginFormContainer">
+    <p id="loginP">Login 
+        <span id="loginSpan">  or <a href="@{Authenticate.register()}" method="POST">Create Account</a></span></h1>&nbsp;
+
+        <form id="loginForm" action="@{Authenticate.doLogin()}" method="POST">
+
+            <p class="field">
+                <span class="error">#{error 'username' /}</span>
+                <label class="loginLabel">Username</label><br/>
+                <input class="loginFormInput"  type="text" name ="username" value ="${flash['username']}"/>
+            </p>
+
+            <p class="field">
+                <span class="error">#{error 'password' /}</span>
+                <label class="loginLabel">Password</label><br/>
+                <input class="loginFormInput" type="password" name ="password"/>
+            </p>
+
+            <input id="loginSubmitButton" type="submit" name="create" value="Submit"/>
+        </form>
+
+</div>
+
+

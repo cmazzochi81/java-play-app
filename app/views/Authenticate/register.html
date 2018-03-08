@@ -1,0 +1,41 @@
+#{extends 'header.html' /}
+#{set title: 'Art House Auctions and Web Design Inc. - Resiter' /}
+
+<div id="mainContent">
+    <h1>Create Account</h1>
+
+    <form id="registerForm" action="@{Authenticate.doRegister()}" method="POST">
+
+            <p class="field">
+                <span class="error">#{error 'user.username' /}</span>
+                <label>Username</label>
+                <input type="text" name ="user.username" value ="${flash['user.username']}"/>
+            </p>
+
+            <p class="field">
+                <span class="error">#{error 'user.password' /}</span>
+                <label>Password</label>
+                <input type="password" name ="user.password"/>
+            </p>
+
+            <p class="field">
+                <span class="error">#{error 'user.firstname' /}</span>
+                <label>Firstname</label>
+                <input type="text" name ="user.firstname"  value ="${flash['user.firstname']}"/>
+            </p>
+            
+            <p class="field">
+                <span class="error">#{error 'user.lastname' /}</span>
+                <label>Lastname</label>
+                <input type="text" name ="user.lastname"  value ="${flash['user.lastname']}"/>
+            </p>
+            
+            <p class="field" style="float:left;">
+                <span class="error">#{error 'user.email' /}</span>
+                <label>Email</label>
+                <input type="text" name ="user.email"  value ="${flash['user.email']}"/>
+            </p>
+
+            <input type="submit" name="create" value="Register"/>
+        </form>
+</div>

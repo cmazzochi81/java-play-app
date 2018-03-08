@@ -1,0 +1,64 @@
+<!--Expects 2 parameters, the first is the the list of items _items and the second is 
+the type of summary to display _type.  The type an be 'short' or 'full' -->
+
+<div>
+
+    #{list items:_items, as:'item'}
+    
+        #{if _type =='short'}
+        
+        <div style="position:relative; clear:both;">
+            
+            <div style="float:left;">
+                #{if item.photo.exists()}
+                 <img src="@{Application.showImage(item.id)}" alt="${item.title} image" height="30" width="30"/>
+                #{/if}
+                #{else}&nbsp;
+                #{/else}
+            </div>
+            
+            <div style="width:50%;float:left;">
+                <a href="@{Application.show(item.id)}">${item.title}</a>
+            </div>
+
+            <div style="width:15%; float:left;">
+                ${item.endDate.until()}
+            </div>
+
+            <div style="width:15px; float:left; text-align:right; margin-bottom:9px;">
+                ${item.currentTopBid.formatCurrency('GBP').raw()}<br/>
+                ${item.deliveryCost!=0 ?
+                item.deliveryCost.formatCurrency('GBP').raw() : 'Free'}
+            </div>
+        </div> 
+        #{/if}
+        #{else}
+        <div style="position:relative; clear:both;">
+            
+            <div style="float:left;">
+                #{if item.photo.exists()}
+                <img src="@{Application.showImage(item.id)}" alt="${item.title} image" height="30" width="30"/>
+                 #{/if} 
+                  #{else}&nbsp;#{/else}
+            </div>
+                 
+             <div style="width:50%;float:left;">   
+                <a href="@{Application.show(item.id)}">${item.title}</a>
+                <br/>
+                ${item.description.dotChop(25)}
+            </div>
+
+            <div style="width:15%;float:left;">
+                ${item.endDate.until()}
+            </div>
+
+            <div style ="width:15%;float:left; text-align:right; margin-bottom:9px;">
+                ${item.currentTopBid.formatCurrency('GBP').raw()}<br/>
+                ${item.deliveryCost!=0 ?
+                item.deliveryCost.formatCurrency('GBP').raw() : 'Free'}
+            </div>
+            
+        </div>
+        #{/else}
+  #{/list}
+</div>    

@@ -1,0 +1,57 @@
+#{extends 'main.html' /}
+#{set title:'Mazzochi Auctions - Create a new item listing' /}
+
+<div id="mainContent" class="clearfix">
+       
+    <h1>New Item Listing</h1>
+
+
+        <form id="createItemForm"  action="@{Application.doCreateItem()}" method="POST" enctype="multipart/form-data">
+            
+            <p class="field">
+             <span style="display:block; color:red; border: red;" class="error">#{error 'item.title' /}</span>
+                <label>Title</label>
+               <input type="text" name="item.title" value="${flash['item.title']}"/>
+            </p>
+            
+            <p class="field">
+             <span style="display:block; color:red; border: red;" class="error">#{error 'item.days' /}</span>
+                <label>Auction Length (days) </label>
+                <input type="text" name="item.days" value="${flash['item.days']}" />
+            </p>
+            
+            <p class="field">
+             <span style="display:block; color:red; border: red;" class="error">#{error 'item.startBid' /}</span>
+                <label>Start Bid</label>
+                <input type="text" name="item.startBid" value="${flash['item.startBid'] ?: 0.0}"/>
+            </p>
+
+            <p class="field">
+                <label >Show Buy Now Price?</label>
+                <input style="width:20px;" type="checkbox" name="item.buyNowEnabled" value="${flash['item.buyNowEnabled']}" />
+            </p>
+            <p class="field">
+             <span style="display:block; color:red; border: red;" class="error">#{error 'item.buyNowPrice' /}</span>
+                <label>Buy Now Price</label>
+                <input type="text" name="item.buyNowPrice" value="${flash['item.buyNowPrice'] ?: 0.0}"/>
+            </p>
+            <p class="field">
+             <span style="display:block; color:red; border: red;" class="error">#{error 'item.deliveryCost' /}</span>
+                <label>Delivery Cost</label>
+                <input type="text" name="item.deliveryCost" value="${flash['item.deliveryCost'] ?:0.0}"/>
+            </p>
+            <p class="field">
+             <span style="display:block; color:red; border: red;" class="error">#{error 'item.description' /}</span>
+                <label style="float:left;">Item Description</label>
+                <textarea id="createItemFormTextArea" name="item.description" rows="5" cols="25">${flash['item.description']}</textarea>
+            </p>
+
+            <p class="field">
+                <label>Photo</label>
+                <input class="imageUploadButton" type="file" id="photo" name="item.photo"/>
+            </p>
+          <input id="createNewItemSubmitButton" type="submit" name="create" value="Create Listing"/>
+         
+        </form>
+
+</div><!--End main content div-->

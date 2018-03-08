@@ -1,0 +1,26 @@
+#{extends 'main.html' /}
+
+    <header class="clearfix">
+        <h1>Mazzo Art House </h1>
+        <h3 class="date">${new Date().format("MMMM dd yyyy")}</h3>
+        <div id="searchdiv" class="clearfix">
+                <form action="@{Application.search()}" method="GET">
+                    <input class="searchField" type="text" id="search" name="search" placeholder="Search..."/>
+                    <input class="searchButton" style="font-family:Raleway;" type="submit" id="submit" name="submit" value="Search"/>       
+                </form>
+            </div><!--End searchdiv-->
+        <nav class="clearfix">
+            <ul class="clearfix">
+                <li style="background-color:#f6de36;"><a href="@{Application.index()}">Home</a></li>
+                <li style="background-color:#ddf135;"><a href="@{Application.createAuctionItem()}">Auction</a></li> 
+                #{if session.user != null}
+                <li style="background-color:#8590d4;"><a href="@{Authenticate.logout()}">Logout</a></li>
+                #{/if}
+                #{else}
+                <li style="background-color:#8590d4;"><a href="@{Authenticate.login()}">Login</a></li>
+                #{/else}
+            </ul>
+        </nav><!--End globalNav div-->
+    </header><!--End Header div--> 
+
+        #{doLayout /}
