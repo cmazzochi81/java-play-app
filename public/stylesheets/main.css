@@ -477,6 +477,7 @@ p.field{
     height: 200px;
     width: 100%;
     margin:0 auto;
+    text-align:center;
     background-color: #CCCCCC;
 }
 
@@ -486,7 +487,7 @@ footer p {
     text-align: left;
     margin-top:150px;
     font-size: .625em;
-    margin-left:38%;
+    /*margin-left:38%;*/
     position: absolute;
 }
 
@@ -1538,7 +1539,7 @@ footer p {
 /*        border: 3px solid darkorange;*/
         display:inline-block !important;
         margin-top: 90px;
-        width: 13.1%;
+        width: 15.1%;
     }
     
     #popular{
