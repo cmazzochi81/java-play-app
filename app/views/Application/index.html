@@ -2,6 +2,41 @@
 #{set title:'Chris Mazzochi Web Designs Home Page' /}
 
  <div id="mainContent" class="clearfix">
+
+  <a href="#" class="slideout-menu-toggle"  onclick="slideMenu();">
+        <div class="navicon"></div>
+        <div class="navicon"></div>
+        <div class="navicon"></div>
+    </a>
+     
+    
+    <div class="slideout-menu" style="margin-bottom:20px;">
+
+      <div id="slideout-searchdiv" class="clearfix">
+
+         <div id="slideout-searchdiv" class="clearfix">
+
+                <form action="@{Application.search()}" method="GET">
+                    <input class="searchField" type="text" id="search" name="search"/>
+                    <input class="searchButton" style="font-family:Raleway;" type="submit" id="submit" name="submit" value=" Search"/>       
+                </form>
+            </div>
+
+       <ul class="clearfix">
+                <li style="background-color:#f6de36;"><a href="@{Application.index()}">Home</a></li>
+                <li style="background-color:#ddf135;"><a href="@{Application.createAuctionItem()}">Auction</a></li>
+                <li style="background-color:#8d27a2;"><a href="http://www.chrismazzochi.com/public/">PHP Version</a></li>
+                <li style="background-color:#5b32a8;"><a href="http://www.chrismazzochi.com/development">AngularJS2 Version</a></li> 
+                #{if session.user != null}
+                <li style="background-color:#8590d4;"><a href="@{Authenticate.logout()}" style="color:#000;">Logout</a></strong></li>
+                #{/if}
+                #{else}
+                <li style="background-color:#8590d4;"><a href="@{Authenticate.login()}" style="color:#000;">Login</a></strong></li>
+                #{/else}
+                <li><a href="#" class="fa fa-angle-right slideout-menu-close">Close Me<i></i></a></li>
+                
+            </ul>
+    </div>
   
      <div class ="container">
         <div class ="row">
