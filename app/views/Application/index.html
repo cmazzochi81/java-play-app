@@ -23,8 +23,9 @@
        <ul class="clearfix">
                 <li style="background-color:#f6de36;"><a href="@{Application.index()}">Home</a></li>
                 <li style="background-color:#ddf135;"><a href="@{Application.createAuctionItem()}">Auction</a></li>
-                <li style="background-color:#8d27a2;"><a href="http://www.chrismazzochi.com/public/">PHP Version</a></li>
-                <li style="background-color:#5b32a8;"><a href="http://www.chrismazzochi.com/development">AngularJS2 Version</a></li> 
+                <li style="background-color:#8d27a2;"><a href="http://phpwebapp-env.us-east-2.elasticbeanstalk.com/">PHP Art App</a></li>
+                <li style="background-color:#5b32a8;"><a href="https://mazzo-angular-app.herokuapp.com/">Angular Blog App</a></li> 
+                <li style="background-color:#8d27a2;"><a href="https://corridormdtest.azurewebsites.net/">.NET Client App</a></li>
                 #{if session.user != null}
                 <li style="background-color:#8590d4;"><a href="@{Authenticate.logout()}" style="color:#000;">Logout</a></strong></li>
                 #{/if}
