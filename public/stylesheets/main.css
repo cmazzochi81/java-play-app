@@ -333,16 +333,14 @@ input.searchField{
 #createItemForm p{
     margin-top:10px; 
     margin-bottom: 10px; 
-    margin-left: 18%;
     font-family:Raleway;
-    width:50%;
-
+    width:100%;
 }
 
 #createItemFormTextArea{
     margin-left:0px;
     border: 2px solid greenyellow;
-    width:180px;
+    width:100%;
     color:#000;
 }
 
@@ -365,7 +363,7 @@ input.searchField{
     font-family: Raleway, Arial, sans-serif;
     padding:10px;
     width:138px;
-    margin-left:43%; 
+    margin-left:36%; 
     margin-top: 20px; 
     margin-bottom: 20px;
     background-color:#fbed8f;
