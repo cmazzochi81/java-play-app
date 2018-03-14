@@ -385,7 +385,6 @@ p.field{
 .imageUploadButton{
     margin-left:6px;
     width:50%;
-    clear:left;
 }
 
 /*Show Auction Item******************************************************/
@@ -1115,6 +1114,10 @@ footer p {
 
     #photoDetails{
         margin-left:12%;
+    }
+
+    .imageUploadButton{
+        clear:left;
     }
 
 }
