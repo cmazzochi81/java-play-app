@@ -393,6 +393,10 @@ p.field{
     margin: 0 auto;
 }
 
+#showPhoto{
+    margin-left:38%;
+}
+
 #auctionItemDetails{
     border: 1px solid yellow; 
     background-color:#fff; 
@@ -1102,6 +1106,10 @@ footer p {
         width:100% !important;
     }
 
+    #createItemForm input{
+        width:100% !important;
+    }
+
     #createNewItemSubmitButton{
         margin-left:20% !important;
     }
@@ -1110,7 +1118,7 @@ footer p {
         width:100% !important;
     }
 
-    #showPhotoDiv table{
+    #showPhoto{
         margin-left:12% !important;
     }
 

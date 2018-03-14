@@ -10,25 +10,25 @@
     #{list items:_items, as:'item'} 
     <tr>
         #{if item.photo.exists()}
-        <td style="font-size:10pt; vertical-align:top; ">
+        <td style="font-size:10pt; vertical-align:top;text-align:center; ">
         
             <a href="@{Application.show(item.id)}"><img height="50" width="50" src="@{Application.showImage(item.id)}" alt="${item.title} image" target="_blank" /></a>
         </td>
         #{/if}
 
-        <td style="font-size:10pt;">
+        <td style="font-size:10pt;text-align:center;">
             <a href="@{Application.show(item.id)}" target="_blank">${item.title}</a>
         </td>
 
-        <td style="font-size:10pt;">
+        <td style="font-size:10pt;text-align:center;">
             ${item.currentTopBid.formatCurrency('USD').raw()} <br/>
         </td>
 
-        <td style="font-size:10pt;">
+        <td style="font-size:10pt;text-align:center;">
             ${item.endDate.until()}
         </td>
             
-        <td style="font-size:10pt;">
+        <td style="font-size:10pt;text-align:center;">
         ${item.deliveryCost!=0 ? item.deliveryCost.formatCurrency('USD').raw() : 'Free'}
         </td>
     </tr>        
