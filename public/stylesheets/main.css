@@ -1103,6 +1103,10 @@ footer p {
         width:100% !important;
     }
 
+    #createNewItemSubmitButton{
+        margin-left:0px !important;
+    }
+
     #showPhotoDiv{
         width:100% !important;
     }
