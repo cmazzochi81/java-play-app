@@ -1123,7 +1123,11 @@ footer p {
     }
 
     p.field{
-        border: 1px solid #fff !important;
+        /*border: 1px solid #fff !important;*/
+    }
+
+    #register{
+        margin-left:34% !important;
     }
 
 }

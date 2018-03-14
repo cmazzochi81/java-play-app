@@ -8,34 +8,34 @@
 
             <p class="field">
                 <span class="error">#{error 'user.username' /}</span>
-                <label style="border: 1px solid red;padding:0px;">Username</label>
-                <input style="border: 1px solid blue;" type="text" name ="user.username" value ="${flash['user.username']}"/>
+                <label style="padding:0px;">Username</label>
+                <input type="text" name ="user.username" value ="${flash['user.username']}"/>
             </p>
 
             <p class="field">
                 <span class="error">#{error 'user.password' /}</span>
-                <label style="border: 1px solid red;padding:0px;">Password</label>
-                <input style="border: 1px solid blue;" type="password" name ="user.password"/>
+                <label style="padding:0px;">Password</label>
+                <input type="password" name ="user.password"/>
             </p>
 
             <p class="field">
                 <span class="error">#{error 'user.firstname' /}</span>
-                <label style="border: 1px solid red;padding:0px;">Firstname</label>
-                <input style="border: 1px solid blue;" type="text" name ="user.firstname"  value ="${flash['user.firstname']}"/>
+                <label style="padding:0px;">Firstname</label>
+                <input type="text" name ="user.firstname"  value ="${flash['user.firstname']}"/>
             </p>
             
             <p class="field">
                 <span class="error">#{error 'user.lastname' /}</span>
-                <label style="border: 1px solid red;padding:0px;">Lastname</label>
-                <input style="border: 1px solid blue;" type="text" name ="user.lastname"  value ="${flash['user.lastname']}"/>
+                <label style="padding:0px;">Lastname</label>
+                <input type="text" name ="user.lastname"  value ="${flash['user.lastname']}"/>
             </p>
             
             <p class="field">
                 <span class="error">#{error 'user.email' /}</span>
-                <label style="border: 1px solid red;padding:0px;">Email</label>
-                <input style="border: 1px solid blue;" type="text" name ="user.email"  value ="${flash['user.email']}"/>
+                <label style="padding:0px;">Email</label>
+                <input type="text" name ="user.email"  value ="${flash['user.email']}"/>
             </p>
 
-            <input type="submit" name="create" value="Register"/>
+            <input id="register" type="submit" name="create" value="Register"/>
         </form>
 </div>
