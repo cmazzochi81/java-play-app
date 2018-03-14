@@ -883,7 +883,6 @@ footer p {
         width:100%;
         font-size:40pt;
         text-align:center;
-        border: 2px solid red;
     }
     
 
@@ -1102,10 +1101,6 @@ footer p {
 
     #createItemForm input{
         width:100% !important;
-    }
-
-    #createNewItemSubmitButton{
-        margin-left:20% !important;
     }
 
     #showPhotoDiv{
