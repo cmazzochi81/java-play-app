@@ -1,0 +1,46 @@
+#{extends 'main.html' /}
+#{set title:'Mazzochi Auctions - Create a new item listing' /}
+
+
+<div id="mainContent" class="clearfix">
+
+<div style="border: 2px solid yellow;">
+    <div id="showPhotoDiv" style="border: 2px solid red;">
+        #{if item.photo.exists()}
+            <img src="@{Application.showImage(item.id)}" alt="${item.title} image" width="700" height="500" />
+        #{/if}
+
+    </div>
+ <h1 style="border: 2px solid red;text-align:center;">${item.title}</h1>
+    <div style="border: 2px solid red; text-align:center;">
+    
+        <p class="field">
+            <label class="itemDetails">Start Bid: </label>
+            ${item.startBid.formatCurrency('USD').raw()}
+        </p>
+        <p class="field">
+            <label class="itemDetails">Current Bid: </label>
+             ${item.currentTopBid.formatCurrency('USD').raw()} <br/>
+        </p>
+        #{if item.buyNowEnabled}
+        <p class="field">
+            <label class="itemDetails">Buy Now Price: </label>
+           ${item.buyNowPrice}
+        </p>
+        #{/if}
+        <p class="field">
+            <label class="itemDetails">Auction Ends: </label>
+            ${item.endDate}
+        </p>
+        <p class="field">
+            <label class="itemDetails">Delivery Charges: </label>
+            ${item.deliveryCost}
+        </p>
+        <p class="field">
+            <label class="itemDetails">Description: </label>
+            ${item.description}
+        </p>
+        </div>
+
+</div>
+</div>

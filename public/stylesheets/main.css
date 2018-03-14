@@ -137,7 +137,7 @@ nav li a {
     color: #fff;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none !important;
     margin-left: 2.4%;
 }
 
@@ -175,7 +175,16 @@ input.searchField{
     background-color:#000 !important;
     background: url(../images/white-search-icon-small.png) 90% no-repeat;
     color:#fff;
+    border: 1px solid transparent;
 }
+
+.linkHome{background-color:#f6de36;}
+.linkAuction{background-color:#ddf135;}
+.linkPhp{background-color:#67E667;}
+.linkAngular{background-color:#33CCCC;}
+.linkNet{background-color:#4671D5;}
+.loginLogout{background-color:#5b32a8;}
+
 /*Main Content******************************************************/
 
 #mainContent {
