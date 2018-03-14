@@ -967,26 +967,13 @@ footer p {
         background: url(../images/white-search-icon.png) right no-repeat;
     }
 
-    /****Contact Form ************************************************************/
+   
 
     footer {
-        clear: both;
-        position : absolute;
-        height: 50px;
-        width: 100%;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        background-color: #CCCCCC;
+        display:none !important;
     }
 
-    footer p {
-        font-family: Raleway, Arial, sans-serif;
-        color: #000;
-        text-align: center;
-        font-size: .5em;
-        margin-top:1%;
-        margin-left:5%;
-    }
+   
 
     #contactForm{
         width:100%;
