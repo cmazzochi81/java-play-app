@@ -1351,7 +1351,7 @@ footer p {
     }
     
     #searchdiv{
-        border: 3px solid darkorange;
+        border: 3px solid transparent !important;
         display:inline-block !important;
         margin-top: 60px;
         width: 45%;
