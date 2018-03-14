@@ -439,7 +439,6 @@ p.field{
     width:25%;
     margin: 0 auto 250px;
     min-height:250px;
-    border: 1px solid;
 }
 
 #registerForm .error{
@@ -462,6 +461,9 @@ p.field{
 
 #registerForm input{
     font-family:Arial;
+    margin-left:25%;
+    margin-top:5px;
+    margin-bottom:5px;
 }
 
 /*Twitter Widget******************************************************/
