@@ -385,6 +385,7 @@ p.field{
 .imageUploadButton{
     margin-left:6px;
     width:50%;
+    clear:left;
 }
 
 /*Show Auction Item******************************************************/
@@ -967,13 +968,7 @@ footer p {
         background: url(../images/white-search-icon.png) right no-repeat;
     }
 
-   
-
-    footer {
-        display:none !important;
-    }
-
-   
+    footer {display:none !important;}
 
     #contactForm{
         width:100%;
@@ -1118,8 +1113,8 @@ footer p {
         width:100% !important;
     }
 
-    #showPhoto{
-        margin-left:12% !important;
+    #photoDetails{
+        margin-left:12%;
     }
 
 }
