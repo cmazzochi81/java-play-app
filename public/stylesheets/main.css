@@ -172,7 +172,7 @@ nav a:active {
 
 input.searchField{
     margin-left:0px !important;
-    background-color:#000 !important;
+    background-color:#fff !important;
     background: url(../images/white-search-icon-small.png) 90% no-repeat;
     color:#fff;
     border: 1px solid transparent;
@@ -1117,6 +1117,10 @@ footer p {
 
     .imageUploadButton{
         clear:left;
+    }
+
+    #registerForm{
+        width:100% !important;
     }
 
 }
