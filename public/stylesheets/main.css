@@ -461,9 +461,14 @@ p.field{
 
 #registerForm input{
     font-family:Arial;
+    color:#337ab7;
     /*margin-left:25%;*/
     margin-top:5px;
     margin-bottom:5px;
+}
+
+#register{
+    margin-left:15% !important;
 }
 
 /*Twitter Widget******************************************************/
