@@ -438,8 +438,8 @@ p.field{
 #registerForm{
     width:25%;
     margin: 0 auto 250px;
-    padding-left:10%;
     min-height:250px;
+    border: 1px solid;
 }
 
 #registerForm .error{
