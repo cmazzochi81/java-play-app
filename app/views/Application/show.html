@@ -10,7 +10,7 @@
                 <img src="@{Application.showImage(item.id)}" alt="${item.title} image" width="700" height="500" />
             #{/if}
         </div>
-        <table id="photoDetails">
+        <table id="showPhoto">
             <tr><td>Title:</td><td style="padding-left:5px;">${item.title}</td></tr>
             <tr><td>Start Bid:</td><td style="padding-left:5px;">${item.startBid.formatCurrency('USD').raw()}</td></tr>
             <tr><td>Current Bid: </td><td style="padding-left:5px;">${item.currentTopBid.formatCurrency('USD').raw()}</td></tr>
