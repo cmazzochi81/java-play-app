@@ -1123,6 +1123,10 @@ footer p {
         width:100% !important;
     }
 
+    p.field{
+        border: 1px solid transparent !important;
+    }
+
 }
 
 @media only screen and (device-width: 768px) {
