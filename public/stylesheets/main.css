@@ -1389,7 +1389,7 @@ footer p {
     }
 
     #createNewItemSubmitButton{
-        margin-left:17%;
+        margin-left:17% !important;
     }
 
     .slideout-menu {
