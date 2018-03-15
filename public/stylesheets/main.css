@@ -1380,6 +1380,10 @@ footer p {
         width:100% !important;
     }
 
+    #createItemForm label{
+        width:100%;
+    }
+
     #createItemForm input{
         width:60% !important;
     }
