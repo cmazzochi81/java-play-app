@@ -1084,6 +1084,7 @@ footer p {
         width:95% !important;
         margin-top:.75px !important;
         margin-left: 2.5%;
+
     }
     
     .login-logout{
@@ -1248,14 +1249,14 @@ footer p {
         margin-top:5px;
     }
 
-    footer p {
+    /*footer p {
         font-family: Raleway, Arial, sans-serif;
         color: #000;
         text-align: center;
         font-size: 1em;
         margin-top:1%;
         margin-left:24%;
-    }
+    }*/
 
     #contactForm{
         width:100%;
@@ -1356,6 +1357,10 @@ footer p {
         margin-top: 60px;
         width: 45%;
         margin-left:46%;
+    }
+
+    #loginFormContainer{
+        margin-bottom:200px;
     }
     
     .typeArtContainer {
