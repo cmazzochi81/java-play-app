@@ -1141,6 +1141,9 @@ footer p {
 }
 
 @media only screen and (device-width: 768px) {
+    #mainContent > h1 {
+        margin-left:26%;
+    }
 
     header {
         width: 100%;
@@ -1230,10 +1233,9 @@ footer p {
     #mainContent > h1 {
         color: #fff;
         font: 54pt Le-Havre, "Arial", Times, serif;
-        margin-left:38%;
+        margin-left:26%;
         width:50%;
-        margin-top:20px;
-        border: 2px solid red;
+        margin-top:10px;   
     }
 
     #twitterTimeline{display:none;}
@@ -1299,7 +1301,7 @@ footer p {
         margin-left:0px;
         font-family: Raleway;
         font-size: 20pt;
-        padding:10px;
+        padding:0px;
         text-align:left;
     }
 
@@ -1379,7 +1381,7 @@ footer p {
     }
 
     #createItemForm input{
-        width:100% !important;
+        width:60% !important;
     }
 
     #createNewItemSubmitButton{
