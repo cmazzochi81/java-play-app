@@ -1376,6 +1376,10 @@ footer p {
         
     }
 
+    .imageUploadButton{
+        padding:0px !important;
+    }
+
     #createItemForm{
         width:100% !important;
     }
