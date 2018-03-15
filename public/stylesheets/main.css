@@ -1399,6 +1399,14 @@ footer p {
     .slideout-menu {
     display:none !important;
     }
+
+    #showPhoto{
+        margin-left:34% !important;
+    }
+
+    #showPhotoDiv{
+        width:80% !important;
+    }
 }
 
 
