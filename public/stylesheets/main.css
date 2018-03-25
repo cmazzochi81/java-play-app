@@ -1404,7 +1404,7 @@ footer p {
     #mainContent > h1 {
         color: #fff;
         font: 54pt Le-Havre, "Arial", Times, serif;
-        margin-left:43%;
+        margin-left:40% !important;
         width:20%;
         margin-top:20px;
     }
@@ -1444,7 +1444,7 @@ footer p {
     
     div#showPhotoDiv img{height:400px !important;}
 
-    #createItemForm #createNewItemSubmitButton{
-        margin-left:25%;
+    #createNewItemSubmitButton{
+        margin-left:25% !important;
     }
 }  
