@@ -1444,7 +1444,7 @@ footer p {
     
     div#showPhotoDiv img{height:400px !important;}
 
-    #createNewItemSubmitButton{
+    input#createNewItemSubmitButton{
         margin-left:25% !important;
     }
 }  
