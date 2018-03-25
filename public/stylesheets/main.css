@@ -28,10 +28,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-
-ol, ul {
-    list-style: none;
-}
+ol, ul {list-style: none;}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -39,23 +36,13 @@ q:before, q:after {
     content: none;
 }
 
-blockquote, q {
-    quotes: none;
-}
+blockquote, q {quotes: none;}
 
-:focus {
-    outline: 0;
-} 
+:focus {outline: 0;} 
 
-ins {
-    text-decoration: none;
-} 
+ins {text-decoration: none;} 
 
-del {
-    text-decoration: line-through;
-}
-
-/* tables still need 'cellspacing="0"' in the markup */
+del {text-decoration: line-through;}
 
 table {
     border-collapse: collapse;
@@ -66,10 +53,7 @@ img{max-width: 100%;}
 video{max-width: 100%}
 
 /* STRUCTURE **********************************************************/
-body {
-    background-color:#fff;
-
-}
+body {background-color:#fff;}
 
 #wrapper{
     margin: 0 auto;
@@ -77,9 +61,7 @@ body {
     background-color: #000;
 }
 
-.col-lg-8{
-    padding-left:0px;
-}
+.col-lg-8{padding-left:0px;}
 /*Header***************************************************************/
 header {
     width: 100%;
@@ -95,7 +77,7 @@ header h1{
     margin-top: 62px;
     margin-left: 4%; 
     position: absolute;
-    color: #fff; /*#5b32a8;*/
+    color: #fff; 
 }
 
 header h3{
@@ -141,33 +123,20 @@ nav li a {
     margin-left: 2.4%;
 }
 
-nav a:link{
-    color: #fff;
-}
+nav a:link{color: #fff;}
 
-nav a:visted {
-    color:orange;
-}
+nav a:visted {color:orange;}
 
-nav a:hover {
-    color: blue;
-}
+nav a:hover {color: blue;}
 
-nav a:active {
-    color: green;
-}
+nav a:active {color: green;}
 
-.active{
-    color:red;
-}
+.active{color:red;}
 
 #searchdiv{
-/*    border: 3px solid darkorange;*/
     display:inline-block;
-/*    margin-left: 19.1%;*/
     margin-top: 60px;
     width: 13.1%;
-
 }
 
 input.searchField{
@@ -189,7 +158,6 @@ input.searchField{
 #mainContent {
     color:#fff;
     background-color: #000;
-    /*    padding-top:40px;*/
     padding-top:30px;
     padding-bottom: 5%;
     min-height: 400px;
@@ -200,12 +168,7 @@ input.searchField{
     color: #fff;
     font: 54pt Le-Havre, "Arial", Times, serif;
     margin-left:44%;
-
-
     width:15%;
-
-    width:12%;
-
     margin-top:20px;
 }
 
@@ -250,7 +213,6 @@ input.searchField{
     display: inline-block;
     margin-top: 40px;
     margin-left: 200px;
-
 }
 
 .rslides {
@@ -289,7 +251,6 @@ input.searchField{
 #auction-lists{
     margin: 20px auto;
     background-color:#000;
-    /*    width:100%;*/
 }
 
 #auction-lists h2{
@@ -297,9 +258,7 @@ input.searchField{
     font-size:1.5em;
 }
 
-#photoDiv{
-    float:left;
-}
+#photoDiv{float:left;}
 
 #popular {
     height:300px !important;
@@ -365,7 +324,6 @@ input.searchField{
     border: 2px solid greenyellow;
     width:180px;
     color:#000;
-
 }
 #createItemForm #createNewItemSubmitButton{
     font-family: Raleway, Arial, sans-serif;
@@ -377,9 +335,7 @@ input.searchField{
     background-color:#fbed8f;
 }
 
-p.field{
-    margin-bottom:3px;
-}
+p.field{margin-bottom:3px;}
 
 .imageUploadButton{
     margin-left:6px;
@@ -392,9 +348,7 @@ p.field{
     margin: 0 auto;
 }
 
-#showPhoto{
-    margin-left:38%;
-}
+#showPhoto{margin-left:38%;}
 
 #auctionItemDetails{
     border: 1px solid yellow; 
@@ -416,22 +370,16 @@ p.field{
     font-weight:bold;
 }
 
-.itemDetailsSpan{
-    font-family:Raleway;  
-}
+.itemDetailsSpan{font-family:Raleway;}
 
 .formatCurrency{
     font-size:8pt;
     font-weight: bold;
 }
 
-.formatCurrencies{
-    display: inline-block;
-}
+.formatCurrencies{display: inline-block;}
 
-.currency{
-    font-size:8pt;
-}
+.currency{font-size:8pt;}
 
 /*New User******************************************************/
 #registerForm{
@@ -461,23 +409,16 @@ p.field{
 #registerForm input{
     font-family:Arial;
     color:#337ab7;
-    /*margin-left:25%;*/
     margin-top:5px;
     margin-bottom:5px;
 }
 
-#register{
-    margin-left:26% !important;
-}
+#register{margin-left:26% !important;}
 
 /*Twitter Widget******************************************************/
-.twitter-timeline{
-    height:350px !important;
-/*    border: 3px solid yellow !important;*/
-}
+.twitter-timeline{height:350px !important;}
 
 #twitterTimeline{
-/*    border:3px solid yellow !important;*/
     padding:0px !important;
     margin-left:15px !important;
 }
@@ -502,7 +443,6 @@ footer p {
     text-align: left;
     margin-top:150px;
     font-size: .625em;
-    /*margin-left:38%;*/
     position: absolute;
 }
 
@@ -520,9 +460,7 @@ footer p {
     margin-left:2.5%;
 }
 
-.my-video{
-    width:30%;
-}
+.my-video{width:30%;}
 .typeArtContainer {
     height:350px;
     overflow:hidden;
@@ -542,12 +480,9 @@ footer p {
 .typeArtContainer h2{
     font: 3em bold Georgia, "Times New Roman", Times, serif;
     margin-left:45%;
-
 }
 
-.bodycopy {
-    border: 1px solid transparent;
-}
+.bodycopy {border: 1px solid transparent;}
 
 .bodycopy p {
     color: red;
@@ -571,7 +506,6 @@ footer p {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
-    /*    left: 95px;*/
     top: 110px;
     color:pink;
 }
@@ -582,7 +516,6 @@ footer p {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
-    /*    left: 50px;*/
     top: 53%;
     color:yellow;
 }
@@ -693,9 +626,7 @@ footer p {
     text-decoration: none;
     vertical-align: top;
 }
-.slideout-menu .slideout-menu-toggle:hover {
-    color: #fff;
-}
+.slideout-menu .slideout-menu-toggle:hover {color: #fff;}
 .slideout-menu ul {
     list-style: none;
     font-weight: 300;
@@ -723,8 +654,6 @@ footer p {
     right: 10px;
     opacity: .5;
 }
-
-
 
 /* ******************************************************************** */ 
 /* Clearfix: http://csscreator.com/attributes/containedfloat.php        */
@@ -760,18 +689,14 @@ footer p {
 /****Firefox****/
 @-moz-document url-prefix(){
 
-    .form_fields{
-        margin-left:2% !important;
-    }
+    .form_fields{margin-left:2% !important;}
 
     label{
         width:20% !important;
         margin-right:4%;
     }
 
-    #questions p{
-        margin-left:2% !important;
-    }
+    #questions p{margin-left:2% !important;}
 
     .text_area {
         margin-top: 5px;
@@ -783,18 +708,13 @@ footer p {
         margin-right:1%;
     }
 
-    .date{
-        margin-top:8%;
-    }
+    .date{margin-top:8%;}
 
 }
 
 /****IE****/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .date{
-        margin-top:8% !important;
-    }
-
+    .date{margin-top:8% !important;}
 }
 
 /****Media Queries ************************************************************/
@@ -890,7 +810,6 @@ footer p {
         text-align:center;
     }
     
-
     #photoShow {
         margin-top:2px;
         height:200px !important;
@@ -900,9 +819,7 @@ footer p {
         width:98%;
     }
     
-    .photo-show{
-        display:none;
-    }
+    .photo-show{display:none;}
 
     #latest_news{display:none !important;}
 
@@ -926,16 +843,11 @@ footer p {
         padding-left:0px !important;
     }
     
-
     .twitter-timeline{
         border: 2px solid red !important;
         margin-top:2px;
         margin-left:1.5% !important;
-/*        width: 105% !important;*/
-       
     }
-
-/*    #twitter-widget-0{width: 105% !important;}*/
 
     #painting{
         margin-left:0px !important;
@@ -1018,7 +930,6 @@ footer p {
         text-align:left;
     }
 
-
     .form_fields {
         float: left;
         width: 100%;  
@@ -1054,7 +965,6 @@ footer p {
         display:inline !important;
         float:left !important;
         margin-top:0px;
-
     }
 
     .submit{
@@ -1072,7 +982,7 @@ footer p {
         margin-top:5px; 
         margin-left:1.5% 
     }
-    
+
     #ending{
         overflow:scroll;
         margin-top:20px !important; 
@@ -1083,12 +993,9 @@ footer p {
         width:95% !important;
         margin-top:.75px !important;
         margin-left: 2.5%;
-
     }
     
-    .login-logout{
-    color:#000 !important;
-    }
+    .login-logout{color:#000 !important;}
 
     .typeArtContainer {
         height:350px;
@@ -1097,52 +1004,28 @@ footer p {
         margin-bottom:10px;
         margin-left:1.5%;
         border: 1px solid orange;
-        width:98%;
-        
+        width:98%;   
     }
 
-    #createItemForm{
-        width:100% !important;
-    }
+    #createItemForm{width:100% !important;}
 
-    #createItemForm input{
-        width:100% !important;
-    }
+    #createItemForm input{width:100% !important;}
 
-    #createNewItemSubmitButton{
-        margin-left:0px !important;
-    }
+    #createNewItemSubmitButton{margin-left:0px !important;}
 
-    #showPhotoDiv{
-        width:100% !important;
-    }
+    #showPhotoDiv{width:100% !important;}
 
-    #photoDetails{
-        margin-left:12%;
-    }
+    #photoDetails{margin-left:12%;}
 
-    .imageUploadButton{
-        clear:left;
-    }
+    .imageUploadButton{clear:left;}
 
-    #registerForm{
-        width:100% !important;
-    }
+    #registerForm{width:100% !important;}
 
-    p.field{
-        /*border: 1px solid #fff !important;*/
-    }
-
-    #register{
-        margin-left:30% !important;
-    }
-
+    #register{margin-left:30% !important;}
 }
 
 @media only screen and (device-width: 768px) {
-    #mainContent > h1 {
-        margin-left:26%;
-    }
+    #mainContent > h1 {margin-left:26%;}
 
     header {
         width: 100%;
@@ -1371,56 +1254,34 @@ footer p {
         margin-bottom:20px;
         margin-left:1.5%;
         border: 1px solid orange;
-        width:95%;
-        
+        width:95%;  
     }
 
-    .imageUploadButton{
-        padding:0px !important;
-    }
+    .imageUploadButton{padding:0px !important;}
 
-    #createItemForm{
-        width:100% !important;
-    }
+    #createItemForm{width:100% !important;}
 
-    #createItemForm label{
-        width:100%;
-    }
+    #createItemForm label{width:100%;}
 
-    #createItemForm input{
-        width:60% !important;
-    }
+    #createItemForm input{width:60% !important;}
 
-    #createNewItemSubmitButton{
-        margin-left:17% !important;
-    }
+    #createNewItemSubmitButton{margin-left:17% !important;}
 
-    .slideout-menu {
-    display:none !important;
-    }
+    .slideout-menu {display:none !important;}
 
-    #showPhoto{
-        margin-left:34% !important;
-    }
+    #showPhoto{margin-left:34% !important;}
 
-    #showPhotoDiv{
-        width:80% !important;
-    }
+    #showPhotoDiv{width:80% !important;}
 }
 
 
 
 /************************************************************************************/
 @media only screen and (min-width: 1200px){
-    header{
-        height:200px;
-    }
+    header{height:200px;}
     
-    header h1{
-        margin-top:22px;
-    }
+    header h1{margin-top:22px;}
     nav {margin-top:144px !important;}
-
 
     #mainContent > h1 {
         color: #fff;
@@ -1432,13 +1293,12 @@ footer p {
     }
 
     .date{
-        margin-top:6%;
+        margin-top:6% !important;
         margin-left:5% !important;
         color:#fff;
         margin-left:21%;
     }
 
-    
     .my-video{
         height: 300px !important;
         margin-left:20% !important;
@@ -1450,16 +1310,11 @@ footer p {
     border: 3px solid yellow;
     height:300px;
     margin-left:2% !important;
-}
+    }
     
     #photoShow{height:300px !important;}
-    
-    #photoShowLogin{
-        margin-left:100px !important;
-    }
-    #latest_news{
-        height:300px;
-    }
+    #photoShowLogin{margin-left:100px !important;}
+    #latest_news{height:300px;}
     #painting{
         height:300px;
         width:45.5%
@@ -1470,9 +1325,6 @@ footer p {
         margin-left:1.2% !important;
     }
     
-    #twitterTimeline{
-/*        border: 3px solid yellow;*/
-    }
     .twitter-timeline{
         height:300px !important;
         border: 3px solid green !important;
@@ -1482,30 +1334,14 @@ footer p {
 
     .submit{margin-left:43.5% !important;}
 
-    label {
-/*        width:25% !important;*/
-    }
-
-    .field input{
-/*        margin-top:13px;*/
-/*        width:53% !important;*/
-    }
-    
-    #loginForm p.field{
-/*        display:inline*/
-    }
-
     .text_area {height: 200px;}
 
     nav {margin-top:148px;}
-    nav li a{
-        display:block;
-    }
+    nav li a{display:block;}
 
     .rslides img {height: 298px !important;}
     
     #searchdiv{
-/*        border: 3px solid darkorange;*/
         display:inline-block !important;
         margin-top: 60px;
         width: 22%;
@@ -1516,9 +1352,7 @@ footer p {
         overflow:scroll;
     }
     
-    #ending{
-        overflow:scroll;
-    }
+    #ending{overflow:scroll;}
     
     footer p {
         font-family: Raleway, Arial, sans-serif;
@@ -1529,33 +1363,22 @@ footer p {
         margin-left:35%;
     }
     
-    #itemDesc{
-        width:39%;
-    }
+    #itemDesc{width:39%;}
     
-    #auctionItemDetails{
-        width:40%;
-    }
+    #auctionItemDetails{width:40%;}
     
-    div#showPhotoDiv img{
-        height:300px !important;
-    }
-  
+    div#showPhotoDiv img{height:300px !important;}
 }
 
 @media screen and (min-width:1900px){
-    header{
-        height:250px;
-    }
+    header{height:250px;}
     .date{
-        margin-top: 7%;
+        margin-top: 6%;
         margin-left: 5% !important;
         color: #fff;
         margin-left: 21%;
     }
-    #videoDiv{
-        margin-left:35%;
-    }
+    #videoDiv{margin-left:35%;}
     .my-video{
         height: 300px !important;
         margin-left:40% !important;
@@ -1579,10 +1402,7 @@ footer p {
         width:20%;
         margin-top:20px;
     }
-    .submit{
-        margin-left:35%;
-    }
-
+    .submit{margin-left:35%;}
 
     #painting{width:46.8% !important;}
 
@@ -1604,7 +1424,6 @@ footer p {
     }
     
     #searchdiv{
-/*        border: 3px solid darkorange;*/
         display:inline-block !important;
         margin-top: 90px;
         width: 15.1%;
@@ -1612,15 +1431,10 @@ footer p {
     
     #popular{
         margin-left:2.5% !important;
-        overflow:scroll;
-       
+        overflow:scroll; 
     }
     
-    #ending{
-        overflow:scroll;
-    }
+    #ending{overflow:scroll;}
     
-    div#showPhotoDiv img{
-        height:400px !important;
-    }
+    div#showPhotoDiv img{height:400px !important;}
 }  
