@@ -23,15 +23,15 @@
        <ul class="clearfix">
                 <li class="linkHome"><a href="@{Application.index()}">Home</a></li>
                 <li class="linkAuction"><a href="@{Application.createAuctionItem()}">Auction</a></li>
-                <li class="linkPhp"><a href="http://phpwebapp-env.us-east-2.elasticbeanstalk.com/">PHP Art App</a></li>
-                <li class="linkAngular"><a href="https://mazzo-angular-app.herokuapp.com/">Angular Blog App</a></li> 
+                <li class="linkPhp"><a href="http://phpwebapp-env.us-east-2.elasticbeanstalk.com/">PHP App</a></li>
+                <li class="linkAngular"><a href="https://mazzo-angular-app.herokuapp.com/">Angular App</a></li> 
                 #{if session.user != null}
                 <li style="background-color:#8590d4;"><a href="@{Authenticate.logout()}" style="color:#000;">Logout</a></strong></li>
                 #{/if}
                 #{else}
                 <li class="loginLogout"><a href="@{Authenticate.login()}" style="color:#000;">Login</a></strong></li>
                 #{/else}
-                <li class="loginLogout"><a href="#" class="fa fa-angle-right slideout-menu-close">Close Me<i></i></a></li>
+                <li class=""><a href="#" class="fa fa-angle-right slideout-menu-close">Close Me<i></i></a></li>
                 
         </ul>
     </div>
