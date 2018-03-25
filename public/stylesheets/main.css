@@ -1345,7 +1345,11 @@ footer p {
         display:inline-block !important;
         margin-top: 60px;
         width: 22%;
+        position:absolute;
+        left:55%;
     }
+
+
     
     #popular{
         margin-left:2.2%;
@@ -1427,8 +1431,6 @@ footer p {
         display:inline-block !important;
         margin-top: 90px;
         width: 15.1%;
-        position:absolute !important;
-        left:55% !important;
     }
     
     #popular{
