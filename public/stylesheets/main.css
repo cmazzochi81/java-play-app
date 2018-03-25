@@ -1427,8 +1427,8 @@ footer p {
         display:inline-block !important;
         margin-top: 90px;
         width: 15.1%;
-        float:left;
-        margin-left:55%;
+        position:absolute;
+        left:55%;
     }
     
     #popular{
