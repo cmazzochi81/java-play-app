@@ -1379,6 +1379,7 @@ footer p {
 }
 
 @media screen and (min-width:1900px){
+
     header{height:250px;}
     .date{
         margin-top: 6%;
@@ -1447,6 +1448,6 @@ footer p {
     div#showPhotoDiv img{height:400px !important;}
 
     #createItemForm #createNewItemSubmitButton{
-        margin-left:25%;
+        margin-left:25% !important;
     }
 }  
