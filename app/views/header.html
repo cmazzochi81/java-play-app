@@ -15,8 +15,6 @@
                 <li class="linkAuction"><a href="@{Application.createAuctionItem()}">Auction</a></li> 
                 <li class="linkPhp"><a href="http://phpwebapp-env.us-east-2.elasticbeanstalk.com/index.php" target="_blank">PHP App</a></li>
                 <li class="linkAngular"><a href="https://mazzo-angular-app.herokuapp.com/" target="_blank">Angular App</a></li>
-                <li class="linkNet"><a href="https://corridormdtest.azurewebsites.net/" target="_blank">.NET App</a></li>
-
                 #{if session.user != null}
                 <li class="loginLogout"><a href="@{Authenticate.logout()}">Logout</a></li>
                 #{/if}
